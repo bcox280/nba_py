@@ -6,7 +6,9 @@ def test():
     pid = get_player('Tim', 'Duncan')
     vs_pid = get_player('Stephen', 'Curry')
     assert player.PlayerList()
-    assert player.PlayerSummary(pid)
+    thing = player.PlayerList().json
+
+
     # assert player.PlayerGeneralSplits(pid)
     # assert player.PlayerOpponentSplits(pid)
     assert player.PlayerLastNGamesSplits(pid)
@@ -25,3 +27,6 @@ def test():
     # assert player.PlayerShotLogTracking(pid)
     # assert player.PlayerReboundLogTracking(pid)
     assert player.PlayerVsPlayer(pid, vs_pid)
+
+
+test()

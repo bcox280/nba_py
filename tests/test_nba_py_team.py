@@ -10,6 +10,7 @@ def test():
     team_details = team.TeamDetails(team_id)
     assert team_details
     assert team_details.background()
+    print()
     assert team_details.history()
     assert team.TeamCommonRoster(team_id)
     assert team.TeamGeneralSplits(team_id)
@@ -28,3 +29,5 @@ def test():
     assert team.TeamReboundTracking(team_id)
     assert team.TeamPassTracking(team_id)
     assert team.TeamVsPlayer(team_id, player_id)
+
+test()

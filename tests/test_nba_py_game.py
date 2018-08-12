@@ -1,7 +1,9 @@
 from nba_py import game
 
+
 def test():
     gid = '0041400122'
+    print(game.BoxscoreSummary(gid).line_score())
     assert game.BoxscoreSummary(gid)
     assert game.Boxscore(gid)
     assert game.BoxscoreScoring(gid)
